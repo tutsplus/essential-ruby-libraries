@@ -1,0 +1,14 @@
+# /tmp/config.yaml
+development:
+  root_uri: "http://localhost:2938"
+  database_uri: "sqlite:///tmp/development.sqlite3"
+
+test:
+  root_uri: "http://localhost:2939"
+  database_uri: "sqlite:///tmp/test.sqlite3"
+
+production:
+  root_uri: "http://localhost:80"
+  database_uri: "sqlite:///tmp/production.sqlite3"
+
+# { development: { root_uri: "http://localhost:2938", database_uri: "" } }
