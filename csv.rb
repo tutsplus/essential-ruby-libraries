@@ -15,7 +15,7 @@ class Product
   end
 
   def to_a
-    [ @id, @name, @price, @category ]
+    [ @name, @price, @category, @id ]
   end
 end
 
