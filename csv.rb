@@ -32,7 +32,7 @@ class ProductRepository
 
     def find id
       csv = CSV.read(file_location, col_sep: "|")
-      record = csv.to_a.find { |row| row[0].to_i == id}
+      record = csv.to_a.find { |row| row[-1].to_i == id}
       record ? Product.new(*record) : nil
     end
 
